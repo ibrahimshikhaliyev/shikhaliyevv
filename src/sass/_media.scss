@@ -1,0 +1,323 @@
+@media (max-width:1399px) {
+    .side-bar{
+        display: flex;
+    }
+    .arrow-scroll-top{
+        display: flex;
+    }
+}
+
+@media (max-width:1200px) {
+    .arrow-scroll-top{
+        display: none!important;
+    }
+    .container {
+        max-width: 960px;
+    }
+    .side-bar{
+        display: none;
+    }
+    .about-me{
+        &_content{
+            grid-template-columns: 360px 550px;
+            gap: 45px;
+        }
+        &_grid-container{
+            grid-template-rows: auto 80px 80px;
+            grid-template-columns: 200px 200px;
+            gap: 20px 10px;
+        }
+    }
+    .resume_content{
+        &_blocks ul li:after{
+            content:'';
+            height: calc(100% + 46px);
+        }
+
+    }
+
+    
+
+    .skills_container {
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-columns: repeat(3,1fr);   
+        row-gap: 44px;
+    }
+
+    .form{
+        
+        &_content {
+            display: grid;
+            grid-template-columns: 350px 511px;
+            grid-auto-columns: 400px 600px;
+            gap: 85px;
+        }
+        form{
+            // border:1px solid blue ;
+            grid-template-columns: 1fr;
+            .input_wrapper{
+                &:nth-child(3){
+                    grid-column-start: unset;
+                    grid-column-end: unset;
+                }   
+            }
+            .triggers{
+                // border: 1px solid black;
+                grid-column-start: unset;
+                grid-column-end: unset;
+            }
+        }
+    }
+}
+@media (max-width:992px) {
+    .arrow-scroll-top{
+        display: none!important;
+    }
+    .container {
+        max-width: 720px;
+    }
+    .side-bar{
+        display: none;
+    }
+    .button{
+        &:hover{
+            background:$main-color;
+        }
+    }
+    .about-me{
+        &_content{
+            grid-template-columns: 320px 354px;
+        }
+        &_grid-container{
+            grid-template-columns: 170px 170px;
+        }
+    }
+
+
+    .resume_content{
+        &_wrapper {
+            gap:30px 50px;
+            margin-top: 40px;
+        }
+        &_blocks ul li:after{
+            content:'';
+            height: calc(100% + 46px);
+        }
+
+    }
+    .skills_container{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 70px;
+        &_item{
+            margin: 0 auto;
+        }
+    }
+
+    .form{
+        padding-top: 0;
+        &_content {
+            grid-template-columns: 600px;
+            gap: 50px;
+            justify-content: center;
+            form{
+                margin-top: 25px;
+            }
+        }
+        
+        
+    }
+}
+@media (max-width:768px) {
+    .arrow-scroll-top{
+        display: none!important;
+    }
+    .container {
+        max-width: 540px;
+    }
+    .side-bar{
+        display: none;
+    }
+    .promo{
+        padding-left: 15px;
+        .title_fz48{
+            font-size: 38px;
+        }
+    }
+
+
+    .about-me{
+        padding-bottom: 70px;
+        &_content{
+            grid-template-columns: 1fr;
+        }
+        &_grid-container{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .resume{
+        .title_fz36 {
+            font-size: 25px;
+            line-height: 53px;
+        }
+        .resume-divider {
+            margin: 17px auto;
+        }   
+        &_content{
+            &_wrapper {
+                grid-template-columns: 1fr;      
+            }
+           
+    
+        }
+    }
+    
+    .skills{
+        &_container{
+            row-gap: 13px;
+            &_item{
+                width: 260px;
+            }
+        }
+        .progress-container {
+            grid-template-columns: repeat(2,1fr);
+
+        }
+    }
+
+    .portfolio{
+        
+        &_content{
+            grid-template-columns: repeat(2,1fr);
+            gap: 15px;
+
+            &_item{
+                &:nth-child(4){
+                    grid-column-start: unset;
+                    grid-column-end: unset;
+                    grid-row-start: unset;
+                    grid-row-end: unset;
+                }
+                &:nth-child(6){
+                    grid-column-start: unset;
+                    grid-column-end: unset;
+                }
+            }
+
+        }
+    }
+
+    .form{
+        padding-top: 100px;
+        &_content {
+            grid-template-columns: 1fr;
+            form{
+                margin-top: 20px;
+            }
+        }
+        
+        
+    }
+
+
+}
+@media (max-width:576px) {
+    .arrow-scroll-top{
+        display: none!important;
+    }
+    
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    .side-bar{
+        display: none;
+    }
+    .promo{
+        .title_fz48{
+            font-size: 26px;
+            line-height: 39px;
+        }
+    }
+    .menu_block{
+        width: 291px;
+    }
+    
+    .about-me{
+        padding-top: 70px;
+        &_content{
+            grid-template-columns: 100%;
+        }
+
+        .title_fz36{
+            font-size: 24px;
+        }
+        &_grid-container{
+            grid-template-columns: 100%;
+            .about-me_txt{
+                grid-column-start: 1;
+                grid-column-end: 2;
+    
+            }
+            .i-can{
+                justify-content: unset;
+            }
+        }
+
+    }
+    
+    .skills{
+        .title_fz36{
+            font-size: 24px;
+            line-height: 60px;
+        }
+        .resume-divider{
+            margin-top: 20px;
+        }
+        &_container{
+            grid-template-columns: 1fr;
+            row-gap: 30px;
+            &_item{
+                width: 100%;
+                height: 320px;
+            }
+        }
+        .progress-container{
+            grid-template-columns: 1fr;
+        }
+        
+    }
+    
+    .portfolio{
+        .title_fz36{
+            font-size: 24px;
+            line-height: 60px;
+        }
+        .resume-divider{
+            margin-top: 20px;
+        }
+        &_content{
+            grid-template-columns: 1fr;
+            gap: 20px;
+            justify-content: center;
+            &_item{
+                width: 100%;
+            }
+
+        }
+    }
+
+    .form{
+        .title_fz36{
+            font-size: 24px;
+            line-height: 60px;
+        }
+        .resume-divider{
+            margin-top: 20px;
+        }
+        &_img{
+            display: none;
+        }
+        
+    
+    }
+}

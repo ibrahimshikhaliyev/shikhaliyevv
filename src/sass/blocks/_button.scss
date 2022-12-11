@@ -1,0 +1,35 @@
+.button{
+    width: 135px;
+    height: 45px;
+    background: $main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    padding: 12px 25px;
+    outline: none;
+    text-decoration: none;
+    color: #000000;
+    outline: none;
+    &:hover{
+        text-decoration: none;
+        color: #000000;
+        background: $sedondary-color;
+    }
+    &_transparent{
+        background:transparent;
+        box-shadow:none;
+        &:hover{
+            background: transparent;
+        }
+    }
+
+    &_submit{
+        width: 220px;
+        height: 45px;
+        
+    }
+
+    
+}

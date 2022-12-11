@@ -1,0 +1,11 @@
+.divider{
+    height: 3px;
+    background-color:$main-color;
+    border: 0;
+    width: 60px;
+    margin: 25px 0 20px 0;
+    &_about-me{
+        margin: 4px 0 20px 0;
+    }
+}
+

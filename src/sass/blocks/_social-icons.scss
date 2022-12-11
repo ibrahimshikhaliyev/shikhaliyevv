@@ -1,0 +1,24 @@
+.social{
+    &_icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        width: 90px;
+        &_icon{
+            width: 20px;
+            img{
+                width: 100%;
+            }
+        }
+        &_inMenu{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom:50px;
+        }
+        
+    }
+
+    
+}

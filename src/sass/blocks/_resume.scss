@@ -1,0 +1,125 @@
+.resume{
+    width: 100%;
+    min-height: 680px;
+    padding-bottom: 120px;
+    
+
+    &_content{
+        width: 100%;
+        padding: 60px 65px 0 65px;
+        &_wrapper{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 136px;
+            row-gap: 40px;
+            margin-top: 60px;
+            grid-auto-columns: repeat(2,1fr);
+        }  
+        &_blocks{
+            min-height: 378px;
+            // border:1px solid red;
+            .block_title{
+                position: relative;
+                padding-left: 50px;
+                &:before{
+                    
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width:15px;
+                    height: 15px;
+                    border-radius: 100%;
+                    background: $main-color;
+                    left: -1px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    
+                }
+            }
+
+            ul{
+                list-style-type: none;
+                li{
+                    
+                    position: relative;
+                    
+                    &:after{
+                        content:"";
+                        height: calc(100% + 51px);
+                        width: 1px;
+                        background: #000000;
+                        position: absolute;
+                        top: -53px;
+                        left: 6px;
+                        border:0;
+                    }
+
+
+                    .header{
+                        position: relative;
+                        padding-left: 45px;
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 45px;
+                        &:before{
+                            content:'';
+                            width: 39px;
+                            height: 1px;
+                            background:#000000;
+                            border:0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            top: 11px;
+                            left: 7px;
+
+                        }
+                        &_icon{
+                            position: relative;                        
+                            padding-left: 16px;
+                            padding-top: 9px;
+                            @include before_circle;
+                            &:before{
+                                left: 0;
+                            }
+                        }
+                        &_text{
+                            margin-left: 20px;
+                            &_secondary{
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 18px;
+                                color: #000000;
+                            }
+                        }
+                    }
+
+                    .descr{
+                        margin-top: 12px;
+                        padding-left: 45px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #000000;
+                    }
+                }
+            }
+            
+        }  
+    }
+
+    
+
+}
+
+
+.resume_title{
+    text-align: center;
+    padding-left: 0;
+    &:before{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.resume-divider{
+    margin: 25px auto;
+}
